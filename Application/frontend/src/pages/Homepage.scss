@@ -1,0 +1,94 @@
+@import "../styles/colors.scss";
+
+hr {
+  opacity: 5%;
+}
+
+.section1 {
+  text-align: center;
+}
+
+#logo,
+#app-center-heading,
+#app-center-description {
+  color: $colorDark;
+}
+
+#logo {
+  width: 90%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#app-center-heading {
+  font-size: 3.3rem;
+}
+
+#app-center-description {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.section2 button{
+  margin-top: 1.5rem;
+}
+
+.carousel,
+.carousel-inner img {
+  margin: auto;
+  width: 60vw;
+  border-radius: 2rem;
+}
+
+.carousel img {
+  height: 40vw;
+  filter: brightness(50%) blur(1.5px);
+}
+
+.carousel-caption p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.section3 {
+  background-image: linear-gradient(white, $colorLight);
+}
+
+.section3 i {
+  font-size: 7rem;
+}
+
+.section3 p {
+  font-size: 1.2rem;
+}
+
+.section3 .content {
+  margin: 1rem auto;
+  max-width: 60vw;
+}
+
+@media screen and (max-width: 992px) {
+  .section1 {
+    height: 70vh;
+  }
+  .data {
+    width: 90%;
+  }
+
+  .carousel,
+  .carousel-inner img {
+    margin: auto;
+    width: 90vw;
+  }
+
+  .carousel img {
+    height: 67vw;
+  }
+
+  .section3 .content {
+    max-width: 95vw;
+  }
+}

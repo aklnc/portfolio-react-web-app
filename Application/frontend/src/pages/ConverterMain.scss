@@ -1,0 +1,32 @@
+@import '../styles/colors.scss';
+
+li {
+    margin-left: 2rem;
+}
+
+.card-link {
+    text-decoration:none !important;
+    color: black;
+}
+
+.card-link svg {
+    height: 100px;
+}
+
+.card-link:hover {
+    text-decoration:none !important;
+    color: $colorPrimary;
+}
+
+.database-informer {
+    background-color: $colorDark !important;
+    color: white !important;
+}
+
+.database-informer a {
+    color: $colorPrimary;
+}
+
+.database-informer a:hover {
+    color: $colorSecondary;
+}

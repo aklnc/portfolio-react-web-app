@@ -1,0 +1,41 @@
+@import "../styles/colors.scss";
+
+.database-element-container {
+  max-width: 90% !important;
+  min-width: 1200px;
+}
+
+.database-element-table {
+  text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  margin-top: 40px;
+}
+
+.database-element-table thead {
+  background-color: $colorDark;
+  color: white;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+.database-element-table tbody tr:hover {
+  background-color: $colorPrimary;
+}
+
+@media print {
+  @page {
+    size: A2 portrait;
+  }
+  .database-element-container {
+    min-width: 0;
+  }
+  .database-element-table {
+    margin: 0;
+  }
+  .database-element-table thead {
+    position: static;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../styles/colors.scss';
+
+.converter-nav-item {
+    flex: 0 0 auto;
+    max-width: calc(100% / 8) !important;
+    text-align: center;
+}
+
+.converter-nav-item svg{
+    width: 100%;
+}
+
+.active-nav{
+    background-color: $colorPrimary;
+    border: $colorPrimary 1px solid;
+    border-radius: 1.2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .converter-nav-item {
+        flex: 0 0 auto;
+        max-width: calc(100% / 4) !important;
+        text-align: center;
+    }
+}

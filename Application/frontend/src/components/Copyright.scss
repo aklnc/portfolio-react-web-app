@@ -1,0 +1,24 @@
+@import '../styles/colors.scss';
+
+section {
+    padding: 2rem 0;
+}
+
+#footer {
+    background: $colorDark !important;
+}
+
+@media (max-width:992px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+@media print {
+    #footer {
+        padding: 10px;
+    }
+}

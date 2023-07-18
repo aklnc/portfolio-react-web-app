@@ -1,0 +1,11 @@
+@import '../styles/colors.scss';
+
+#navigation {
+    background-color: $colorDark;
+}
+
+@media print {
+  nav {
+    opacity: 0;
+  }
+}

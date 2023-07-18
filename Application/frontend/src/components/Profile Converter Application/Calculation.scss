@@ -1,0 +1,14 @@
+@import '../../styles/colors.scss';
+
+.input-container {
+    text-align: center;
+}
+
+.input-container button {
+    background-color: $colorPrimary !important;
+    border: $colorDark 1px solid !important;
+}
+
+.error-text {
+    color: $colorPrimary
+}

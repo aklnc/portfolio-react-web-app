@@ -1,0 +1,27 @@
+@import '../styles/colors.scss';
+
+.database-table {
+  cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  margin-top: 40px;
+}
+
+.database-table thead {
+    background-color: $colorPrimary;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+}
+
+.database-table tbody tr:hover {
+    background-color: $colorPrimary;
+}
+
+@media print {
+  .database-table thead {
+    position: static;
+  }
+}
